@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>RonySingh</title>
+</head>
+<style type="text/css" media="all">
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #171313;
+    }
+    
+    .heart {
+        width: 150px;
+        height: 150px;
+        background: red;
+        transform: rotate(-45deg);
+        box-shadow: -10px 10px 90px red;
+        animation: heart 0.6s linear infinite;
+        position: relative;
+        left: 50px;
+    }
+    
+    @keyframes heart {
+        0% {
+            transform: rotate(-45deg) scale(1.07);
+        }
+        80% {
+            transform: rotate(-45deg) scale(1.0);
+        }
+        100% {
+            transform: rotate(-45deg) scale(0.8);
+        }
+    }
+    
+    .heart:before {
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background: red;
+        top: -50%;
+        border-radius: 75px;
+        box-shadow: -10px 10px 90px red;
+    }
+    
+    .heart:after {
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background: red;
+        top: -50%;
+        border-radius: 75px;
+        box-shadow: -10px 10px 90px red;
+    }
+    
+    p {
+        color: white;
+        position: relative;
+        left: -80px;
+        top: -30px;
+        font-size: 1.5em;
+        animation: heart 0.6s linear infinite;
+    }
+</style>
+
+<body>
+    <div class="heart"></div>
+    <p>RonySingh</p>
+</body>
+
+</html>

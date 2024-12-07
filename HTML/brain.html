@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>my intelligent page</title>
+</head>
+
+<body>
+    <h1>click the button</h1>
+    <button on click="alert(button clicked from inline js)">click</button>
+    <br><br>
+
+    <button on click="show()">click me-tag</button>
+
+    <button on click="display()">click me-file</button>
+
+    <script src="app.js"></script>
+    <script>
+        function display() {
+            alert("button clicked from<script>tag")
+        }
+    </script>
+</body>
+
+</html>

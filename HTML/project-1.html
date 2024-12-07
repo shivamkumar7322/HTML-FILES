@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>वफ़ादार फिटनेस</title>
+</head>
+
+<link rel="stylesheet" href="<link rel=" preconnect " href="https://fonts.googleapis.com ">
+<link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap " rel="stylesheet ">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap " rel="stylesheet ">
+<link rel="stylesheet " href="css/style.css ">
+
+<link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+<style>
+    /* CSS Reset */
+    
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('image/11111.jpg') no-repeat center center/cover;
+    
+    }
+
+    
+    
+    h5 {
+        background-color: #000000;
+        box-shadow: 2px 2px 5px 2px #fffafa;
+        animation: animate 3s linear infinite;
+        animation-delay: 2s;
+        margin: 12px 10px auto;
+        padding: 10px 10px;
+        width: 300px;
+        border-radius: 100px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 26px;
+        text-shadow: 1px 2.5px 1px blue;
+        cursor: pointer;
+        transition: all 1s ease-out .2s;
+    }
+    
+    @keyframes animate {
+        from {
+            filter: hue-rotate(0deg);
+        }
+        to {
+            filter: hue-rotate(360deg);
+        }
+    }
+    
+    h5:hover {
+        background-color: rgb(255, 230, 0);
+        
+        transform: scale(2);
+    }
+    
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+    
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+    
+    .left div {
+        line-height: 35px;
+        font-size: 26px;
+        text-align: center;
+        color: #0ce72d;
+        font-weight: bold;
+        font-style: inherit;
+        text-shadow: 1px 2.5px 1px blue;
+    }
+    
+    .left div:hover {
+        background-color: #0ce72d;
+    }
+    
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+    
+    .right {
+        position: absolute;
+        right: 20px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    
+    .navbar {
+        display: inline-block;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+    
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    
+    .navbar li a.active::before {
+        font-family: "FontAwesome ";
+        color: rgba(139, 121, 160, 0.416);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: attr(data-icon);
+    }
+    
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(245, 27, 27);
+    }
+    
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 1s ease-in-out .3s;
+       
+    }
+    
+    .btn1 {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        width: 200px;
+        height: 60px;
+        transition: all 1s ease-in-out .3s;
+        
+       
+    }
+    .btn1:hover {
+        background-color: rgb(197, 181, 0);
+        box-shadow: 7px 5px 18px 5px rgb(50, 99, 205);
+        transform: rotate(360deg);
+    }
+    
+    
+    .btn:hover {
+        background-color: rgb(197, 181, 0);
+        box-shadow: 7px 5px 18px 5px yellowgreen;
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        font-size: 30px;
+    }
+    
+    .container {
+        border: 2px solid white;
+        margin: 80px 50px;
+        padding: 30px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    
+    .container h1 {
+        text-align: center;
+        color: red;
+        font-weight: bold;
+        text-shadow: 1px 2px 1px blue;
+    }
+    
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    
+    .container button:hover {
+        background-color: rgb(197, 181, 0);
+        text-shadow: aqua;
+    }
+    
+    .link li a {
+        text-decoration: none;
+    }
+    
+    .link li:hover a {
+        background-color: #e70c0c;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    .container1 {
+        font-family: "Anton ", sans-serif;
+  
+  
+        height: 400px;
+        background: green;
+        color: white;
+    }
+    
+    .left1 {
+        float: left;
+        width: 50%;
+        padding: 20px;
+        font-style: italic;
+    }
+    
+    .left1 * {
+        margin-top: 10px;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    .right1 {
+        float: right;
+        width: 50%;
+        padding: 20px;
+        font-style: italic;
+    }
+    
+    .right1 * {
+        margin-top: 10px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+        
+    }
+    
+    .mar {
+        color: white;
+        text-shadow: 0px 0px 10px cyan, 0px 0px 20px cyan, 0px 0px 40px cyan, 0px 0px 80px cyan;
+        font-size: 20PX;
+    }
+    .corner li a:hover{
+        background-color: #0c26e7;
+    }
+    .corner1 li:hover{
+        background-color: #460ce7;
+        text-decoration: underline;
+    }
+    
+    .fa {
+        padding: 5px;
+        font-size: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px 5px 2px;
+    }
+    
+    .fa:hover {
+        transform: translate(0, -10%);
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+        background-color: #285aeb;
+    }
+    
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 5px 2px 18px blueviolet;
+        padding: 5px;
+        width: 75px;
+    }
+    
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 5px 2px 30px blueviolet;
+        width: 75px;
+    }
+    
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 5px 2px 30px blueviolet;
+    }
+    
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+        border-radius: 25px;
+        box-shadow: 5px 2px 30px red;
+    }
+    
+    .fa-instagram {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d624 60%, #285aeb 90%);
+        border-radius: 7px;
+        color: white;
+        box-shadow: 5px 2px 30px rgb(101, 226, 43);
+    }
+    
+    .fa-whatsapp {
+        background: green;
+        color: white;
+        border-radius: 50px;
+        box-shadow: 5px 2px 30px yellowgreen;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- Left box for logo -->
+        <div class="left ">
+            <img src="/image/gym-logo.png " alt=" ">
+            <div>वफ़ादार फिटनेस_801</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid ">
+            <ul class="navbar ">
+                <li style="--i:6; " data-icon="&#xf015 "><a href="# " class="active ">Home</a></li>
+                <li><a href="# ">About Us</a></li>
+                <li><a href="# ">Fitness Calculator</a></li>
+                <li><a href="tel:+917322846171 ">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right ">
+            <button class="btn "><a href="tel:+917322846171 ">Call Us Now</a></button>
+            <button class="btn "><a href="mailto:shivamkypbnr@gmail.com ">Email Us</a></button>
+        </div>
+    </header>
+    <br>
+    <center><br>
+        <marquee behavior=" " direction=" " class="mar ">
+            <b>Join The Best Gym Of Bhagwanpur Now Near:-GAS AGENCY ROAD <B>Bhagwanpur</B> <em>RONY_SINGH </em>7322846171</b> <br><br> </marquee>
+        <h5>वफादर फिटनेस सेंटर</h5>
+        <div class="container ">
+            <h1>Join the best gym of Bhagwanpur now</h1>
+            <form action="noaction.php ">
+                <div class="form-group ">
+                    <input type="text " name=" " placeholder="Enter your Name ">
+                </div>
+                <div class="form-group ">
+                    <input type="text " name=" " placeholder="Enter your Age ">
+                </div>
+                <div class="form-group ">
+                    <input type="text " name=" " placeholder="Enter your Gender ">
+                </div>
+                <div class="form-group ">
+                    <input type="text " name=" " placeholder="Enter your Locality ">
+                </div>
+                <div class="form-group ">
+                    <input type="text " name=" " placeholder="Enter your Email Id ">
+                </div>
+                <div class="form-group ">
+                    <input type="text " name=" " placeholder="Enter your Phone Number ">
+                </div>
+                <button class="btn1 ">Submit</button>
+            </form>
+        </div>
+    </center>
+    <!-- <ul class="link ">
+        <li> <a href="https://brabu.net/bca42225_result.php ">Check Application Status...</a></li>
+        <li> <a href="tel:+917322846171 ">Call Me...</a></li>
+        <li> <a href="mailto:shivamkypbnr@gmail.com ">Email Me...</a> </li>
+        <li> <a href="https://wa./+917322846171 " class="boy "> Contact us</a></li>
+    </ul> -->
+
+
+    <div class="container1 ">
+
+        <div class="left1 ">
+            <h2>Footer Navigation</h2>
+            <hr>
+
+            <ul class="corner ">
+                <li><a href="https://brabu.net/home.php ">Home</a></li>
+                <hr>
+                <li><a href="https://brabu.net/result.php ">Result</a></li>
+                <hr>
+                <li><a href="https://brabu.net/officers.php ">Addmission</a></li>
+                <hr>
+                <li><a href="https://brabu.net/college.php ">College</a></li>
+                <hr>
+                <li><a href="https://brabu.net/result.php# ">Contact</a></li>
+                <hr>
+                <li><a href="https://brabu.net/course.php ">Course</a></li>
+
+            </ul>
+        </div>
+
+        <div class="right1 ">
+            <h2>Student Corner</h2>
+            <hr>
+            <ul class="corner1 ">
+                <li>Online Submission of Fee for Various Certificates</li>
+                <hr>
+                <li>PGDCA Course Details Click to read more</li>
+                <hr>
+                <li>For any query about MCA/PGDCA/CIC Courses, please contact at MCA Course, P.G. Department of Mathematics Anti Ragging Regulation</li>
+                <hr><br>
+                <li>BBA/BCA/BLIS/MBA/MCA/PGDCA Result are out . Follow the link</li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+    </div>
+    <div class="center ">
+        <center>
+            <a href="https://www.facebook.com/profile.php?id=100032349095249&mibextid=JRoKGi " class="fa fa-facebook "></a>
+            <a href="https://www.instagram.com/rony_singh801/profilecard/?igsh=NGh5bWY5NTdobWxk " class="fa fa-instagram "></a>
+            <a href="https://wa.me/+917322846171 " class="fa fa-whatsapp "></a>
+            <a href="https://www.linkedin.com/in/shivam-kumar-571289309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="fa fa-linkedin "></a>
+            <a href="https://youtube.com/channel/UCeHKO6bLzRIBG7vccs89jJg " class="fa fa-youtube "></a>
+            <a href="# " class="fa fa-twitter "></a>
+        </center>
+        </div>
+</body>
+
+</html>

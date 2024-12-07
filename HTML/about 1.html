@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .container:before {
+        content: " ";
+        display: table;
+    }
+    
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    
+    .main-nav {
+        margin-top: 0;
+        border: 1px solid #eee;
+        background: none;
+    }
+    
+    .main-nav .row {
+        margin-bottom: 0;
+    }
+    
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    
+    .row:before {
+        content: " ";
+        display: table;
+    }
+    
+    .col-md-12 {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .navbar {
+        position: relative;
+        min-height: 30px;
+        margin-bottom: 0;
+    }
+    
+    .navbar-default {
+        border: none;
+        background: none;
+    }
+    
+    .navbar-default .navbar-collapse {
+        float: left;
+        width: 100%;
+        border: none;
+        padding: 0;
+        overflow-x: visible;
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar-nav {
+        margin: 7.5px -15px;
+    }
+    
+    .nav {
+        padding-left: 0;
+        list-style: none;
+    }
+    
+    .navbar-nav>li {
+        padding-bottom: 0;
+    }
+    
+    .nav>li {
+        position: relative;
+        display: block;
+    }
+    
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 fontAwesone;
+        font-size: inherit;
+        -webkit-flow-smothing: antialiased;
+        transform: translate(0, 0);
+    }
+    
+    .fa-home:before {
+        content: "\f015";
+    }
+    
+    .navbar-nav>li.current-menu-item>a {
+        color: #1792b8;
+    }
+    
+    .nav>li.current-menu-item>a {
+        border-bottom: none;
+    }
+    
+    .navbar-nav>li>a {
+        line-height: 30px;
+        font-family: 'releway', 'open sans', 'arial', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        color: #333;
+        border-bottom: 3px solid transparent;
+    }
+    
+    .nav>li>a {
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        display: block;
+    }
+    
+    a {
+        transition: all 0.2s ease 0s;
+        text-decoration: none;
+        background: transparent;
+    }
+    
+    .dropdown-menu {
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background-color: #fff;
+        -webkit-border-radius: 3px;
+        border: 1px solid #eee;
+        min-width: 200px;
+        box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.2);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        float: left;
+        padding: 5px 0;
+        margin: 2px 0 0;
+        list-style: none;
+        font-size: 14px;
+        text-align: left;
+        background-clip: padding-box;
+    }
+    
+    .li {
+        display: list-item;
+        text-align: -webkit-maten-parent;
+        unicode-bidi: isolate;
+        margin: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    
+    .dropdown-menu>li>a {
+        font-size: 12px;
+        color: #333;
+        padding: 8px 0px;
+        border-bottom: 1px dotted #ddd;
+        display: block;
+        clear: both;
+        font-weight: normal;
+        line-height: 1.42857143;
+        white-space: nowrap;
+    }
+    
+    .dropdown-menu>li {
+        padding: 0px 11px;
+    }
+    
+    .dropdown .dropdown-menu .dropdown-submenu>a {
+        position: relative;
+    }
+    
+    .dropdown-submenu>.dropdown-menu {
+        left: 100%;
+        top: -3px;
+        box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+
+
+<body>
+    <div class="container">
+        <div class="main-nav">
+            <!-- .row start -->
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-default nav-left" role="navigation">
+                        <!-- MAIN NAVIGATION -->
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="current-menu-item"><a href="index.php?ref=home"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>
+                                <li class=" dropdown">
+                                    <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">About</a>
+                                    <ul class="dropdown-menu" style="visibility: visible; display: none;">
+                                        <li><a href="index-1.php?ref=about">About Us</a></li>
+                                        <li><a href="index-1.php?ref=about">Vision</a></li>
+                                        <li><a href="#">Mission</a></li>
+                                        <li><a href="index-1.php?ref=about">Goals &amp; Objectives</a></li>
+                                        <li><a href="index-1.php?ref=about">History</a></li>
+                                        <li class="dropdown dropdown-submenu">
+                                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Principal</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="">Principal's Desk</a></li>
+                                                <li><a href="">List of Principals</a></li>
+                                            </ul>
+                                            <!-- .dropdown-menu end -->
+                                        </li>
+                                        <li><a href="index-1.php?ref=about">Administration</a></li>
+                                        <li><a href="index-1.php?ref=about">IQAC</a></li>
+                                        <li><a href="index-1.php?ref=about">Committees</a></li>
+                                        <li><a href="index-1.php?ref=about">Achievements</a></li>
+                                        <li><a href="index-1.php?ref=about">Contributions</a></li>
+                                    </ul>
+                                    <!-- .dropdown-menu end -->
+                                </li>
+</body>
+
+</html>>
+
+</html>
